@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="src/style.css">
+    <script src="https://kit.fontawesome.com/9293cada29.js" crossorigin="anonymous"></script>
+    <script rel="module" src="src/script.js" defer></script>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo">
+            <p>APAC</p>
+        </div>
+        <div class="mode">
+        </div>
+        <div class="link">
+            <ul>
+                <div class="btnlink"></div>
+                <button class="sign in">SIGN IN</button>
+                <button class="sign up">SIGN UP</button>
+                <i class="fas fa-moon" onclick="myIcon(this)"></i>
+            </ul>
+        </div>
+    </nav>
+    <div class="user-container">
+        <form class="formbox">
+            <div class="formhead">
+                <img class="user" src="src/user.png">
+                <p>Sign in</p>
+                <div class="login">
+                    <label for="username">Username</label>
+                    <input class="input" id="username" type="text" placeholder="Enter username" required>
+                    <label for="password">Password</label>
+                    <input class="input" id="password" type="password" placeholder="Enter password" required>
+                </div>
+                <button class="btn-login" type="button">Login</button>
+            </div>
+        </form>
+
+        <form class="regbox">
+            <div class="formhead">
+                <p>Register Account</p>
+                <div class="reg">
+                    <div class="row">
+                        <label>Username</label>
+                        <input class="input" id="reguser" type="text" placeholder="Enter Username" required>
+                    </div>
+                    <div class="row">
+                        <label>First Name</label>
+                        <input class="input" id="regfname" type="text" placeholder="Enter Firstname" required>
+
+                    </div>
+                    <div class="row">
+                        <label>Middle Name</label>
+                        <input class="input middle" id="regmname" type="text" placeholder="Enter Middlename" required>
+
+                    </div>
+                    <div class="row">
+                        <label>Surname</label>
+                        <input class="input" id="reglname" type="text" placeholder="Enter Lastname" required>
+                    </div>
+                    <div class="row">
+                        <label for="reguser">Email</label>
+                        <input class="input" id="regemail" type="email" placeholder="Enter Email" required>
+                    </div>
+                    <div class="row">
+                        <label for="reguser">Address</label>
+                        <input class="input" id="regbplace" type="text" placeholder="Enter Address" required>
+                    </div>
+                    <div class="row">
+                        <label for="reguser">Mobile Number</label>
+                        <input class="input" id="regnum" type="text" placeholder="Enter Mobile number" required>
+                    </div>
+                    <div class="row">
+                        <label for="reguser">Age</label>
+                        <input class="input" id="regage" type="number" placeholder="Enter Age" required>
+                    </div>
+                    <div class="row">
+                        <label for="reguser">Birthdate</label>
+                        <input class="input" id="regbday" type="date" placeholder="Birthday (MM/DD/YY)" required>
+                    </div>
+                    <div class="row">
+                        <label for="reguser">Gender</label>
+                        <input class="input" id="reggender" type="text" placeholder="Enter Gender (Male/Female)" required>
+                    </div>
+                    <div class="row">
+                        <label for="reguser">Password</label>
+                        <input class="input" id="regpw" type="password" placeholder="Enter Password" required>
+                    </div>
+                    <div class="row">
+                        <label for="reguser">Re-enter Password</label>
+                        <input class="input" id="regrpw" type="password" placeholder="Enter Re-enter password" required>
+                    </div>
+            </div>
+            <button class="btn-reg" type="button">Submit</button>
+        </form>
+    </div>   
+</body>
+</html>
